@@ -6,6 +6,7 @@
     </head>
     <body>
         <header>
+            <!-- Можеш да сложиш <nav> таг тук, в допълнение към <header> -->
             <table width=100%>
                 <tr>
                     <td>
@@ -25,13 +26,19 @@
             <div>
                 <a href="Home-Page-Magratea.html">Начало</a>
             </div>
-            <br/>
-            <h1>
-                Творения ръчна изработка Magratea
-            </h1>
+            <!-- <h1> не би трябвало да е се намира в <header>-a а да слезе по-долу към основната част на страницата.
+                Причината е, че <header>-а би трябвало да може да се преизползва за всичките страници, а това заглавие няма да е Ок за всяка страница  -->
         </header>
+        
+        <br/>
+        <!-- Тук можеш да обвиеш съдържанието в един <main> или <article> или <section> таг. -->
+        <h1>
+            Творения ръчна изработка Magratea
+        </h1>
+        
         <br/>
         <br/>
+
         <table>
             <tr>
                 <td>
@@ -43,26 +50,30 @@
                     </p>
                 </td>
                 <td>
-                   <img src="Images/IMG_1038a.jpg" usemap="#image-map" width="500">
-                        <map name="image-map">
-                            <area alt="Чаши и лъжички" title="Чаши и лъжички" href="Product-Page-1.html" coords="251,71,54" shape="circle" target="blank">
-                            <area alt="Обеци" title="Обеци" href="Product-Page-2.html" coords="120,251,60" shape="circle" target="blank">
-                            <area alt="Колиета" title="Колиета" href="Product-Page-3.html" coords="376,248,61" shape="circle" target="blank">
-                        </map>
+                    <!-- Не знам от къде я изписа тая картинка, ама тия понички изглеждат като реални .... огладнях :) -->
+                    <img src="Images/IMG_1038a.jpg" usemap="#image-map" width="500"/>
+                    <map name="image-map">
+                        <!-- Не бих сложил target="_blank" тъй като реално не напускаме сайта, а само навигираме от една страница към друга -->
+                        <area alt="Чаши и лъжички" title="Чаши и лъжички" href="Product-Page-1.html" coords="251,71,54" shape="circle" target="blank">
+                        <area alt="Обеци" title="Обеци" href="Product-Page-2.html" coords="120,251,60" shape="circle" target="blank">
+                        <area alt="Колиета" title="Колиета" href="Product-Page-3.html" coords="376,248,61" shape="circle" target="blank">
+                    </map>
                 </td>
             </tr>
         </table>
-        <span>
-            <a href="Product-Page-1.html">Чаши и лъжички</a>
-        </span>
-        <br/>
-        <span>
-            <a href="Product-Page-2.html">Обеци</a>
-        </span>
-        <br/>
-        <span>
-            <a href="Product-Page-3.html">Колиета</a>
-        </span>
-
+        <!-- И това може да е в <nav> -->
+        <nav>
+            <span>
+                <a href="Product-Page-1.html">Чаши и лъжички</a>
+            </span>
+            <br/>
+            <span>
+                <a href="Product-Page-2.html">Обеци</a>
+            </span>
+            <br/>
+            <span>
+                <a href="Product-Page-3.html">Колиета</a>
+            </span>
+        </nav>
     </body>
 </html>

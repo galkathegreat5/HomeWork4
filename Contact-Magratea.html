@@ -47,11 +47,15 @@
             <br/>
             <label name="How-do-you-know-us">Откъде научихте за Magratea:</span>
                 <br/>
-                <input type="radio" name="How-do-you-know-us" id="Opt1"><label name="How-do-you-know-us">Срещнахте ни на събитие</label>
+                <input type="radio" name="How-do-you-know-us" id="Opt1">
+                <!-- <label> тагът няма атрибут name. Също така, за да го направиш да селектира радио бутона при клик, трябва да сложиш атрибута for -->
+                <label for="Opt1">Срещнахте ни на събитие</label>
                 <br/>
-                <input type="radio" name="How-do-you-know-us" id="Opt2"><label name="How-do-you-know-us">Открихте ни онлайн</label>
+                <input type="radio" name="How-do-you-know-us" id="Opt2">
+                <label for="Opt2">Открихте ни онлайн</label>
                 <br/>
-                <input type="radio" name="How-do-you-know-us" id="Opt3"><label name="How-do-you-know-us">Друго</label>
+                <input type="radio" name="How-do-you-know-us" id="Opt3">
+                <label for="Opt3">Друго</label>
             <br/>
             <br/>
                 <label name="Date">Дата:</label><input type="date" name="Date">
